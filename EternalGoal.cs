@@ -1,3 +1,14 @@
+/*
+This class  Represents an ongoing goal that can be recorded repeatedly.
+
+Key Responsibilities:
+Never completes (always returns false for IsComplete).
+Awards points every time it's recorded.
+Ideal for habits or recurring tasks.
+
+*/
+
+
 public class EternalGoal : Goal
 {
     public EternalGoal(string name, string description, int points)

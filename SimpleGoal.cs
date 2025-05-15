@@ -1,3 +1,15 @@
+
+/* this class Represents a one-time goal that can be marked complete.
+
+Key Responsibilities:
+Tracks completion status (_isComplete).
+Awards points when recorded for the first time.
+Cannot be recorded again once completed.
+
+*/
+
+
+
 public class SimpleGoal : Goal
 {
     private bool _isComplete = false;

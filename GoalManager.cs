@@ -1,6 +1,16 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+/*
+Role: Manages all goal operations and user interactions.
+
+Key Responsibilities:
+Maintains the list of goals and user score.
+Handles menu navigation and user input.
+Provides file I/O for saving/loading progress.
+Coordinates goal creation and event recording.
+
+*/
 
 public class GoalManager
 {
@@ -9,7 +19,8 @@ public class GoalManager
 
     public int GetScore() => _score;
 
-    public void CreateGoal()
+    public void CreateGoal() // create a goal
+    // This method allows the user to create a new goal by selecting its type and providing necessary details.
 {
     Console.WriteLine("Select goal type:\n1. Simple\n2. Eternal\n3. Checklist");
 
@@ -68,7 +79,8 @@ public class GoalManager
 }
 
 
-    public void ListGoals()
+    public void ListGoals() // list all goals
+    // This method displays all the goals to the user, including their current status.
     {
         if (_goals.Count == 0)
         {
@@ -82,7 +94,8 @@ public class GoalManager
         }
     }
 
-    public void SaveGoals()
+    public void SaveGoals() // save goals to a file
+    // This method saves the current goals and score to a specified file.
     {
         Console.Write("Filename to save: ");
         string file = Console.ReadLine() ?? string.Empty;
@@ -97,7 +110,8 @@ public class GoalManager
         Console.WriteLine("Goals saved.");
     }
 
-    public void LoadGoals()
+    public void LoadGoals() // load goals from a file
+    // This method loads goals and score from a specified file, replacing the current goals.
     {
         Console.Write("Filename to load: ");
         string file = Console.ReadLine() ?? string.Empty;
@@ -146,7 +160,8 @@ public class GoalManager
         Console.WriteLine("Goals loaded.");
     }
 
-    public void RecordEvent()
+    public void RecordEvent() // record an event for a goal
+    // This method allows the user to record an event for a specific goal, updating its status and score.
     {
         ListGoals();
         Console.Write("Select goal number to record: ");

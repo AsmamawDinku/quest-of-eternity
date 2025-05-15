@@ -1,3 +1,12 @@
+/*
+This class represents a goal requiring multiple completions before being "done."
+
+Key Responsibilities:
+Tracks progress (_amountCompleted vs. _target).
+Awards a bonus when fully completed.
+Shows incremental progress in its display.
+*/
+
 public class ChecklistGoal : Goal
 {
     private int _target;

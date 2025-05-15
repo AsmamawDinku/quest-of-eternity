@@ -1,4 +1,28 @@
-﻿using System;
+/*
+I approached the project with the goal of creating a more engaging and insightful experience for users by implementing several advanced features beyond the core requirements:
+1. Leveling System: Users level up based on accumulated points, with each level requiring progressively more points.
+   - This encourages long-term motivation and a sense of achievement.
+2. Goal Categories: I introduced categorization for goals (e.g., Health, Education, Spiritual), enabling users to:
+   - Filter and view goals by category
+   - Access category-specific progress reports
+   - Maintain a balanced focus across different life areas
+3. Streak Tracking: For checklist and habit-based goals, I added streak tracking functionality.
+   - Users earn bonus points for maintaining streaks
+   - Visual indicators display current streak status to reinforce consistency
+4. Advanced Statistics:
+   - Completion rate percentages for each goal type
+   - Point trends over daily, weekly, and monthly periods
+   - Estimated time to completion based on the user's current pace
+5. Enhanced UI Features:
+   - Color-coded indicators to reflect goal status at a glance
+   - Progress bars for checklist-type goals
+   - Keyboard shortcuts for quick access to frequent actions
+These enhancements improve user engagement and provide meaningful insights into personal progress and habit development.
+*/
+
+
+
+using System;
 using System.Collections.Generic;
 
 class Program
